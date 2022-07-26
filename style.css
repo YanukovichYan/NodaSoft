@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto-Regular, sans-serif;
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+
+.wrapper {
+    background-color: #C0DBD9;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #7FAFF7;
+    padding: 30px;
+}
+
+.button-popup {
+    background: #A5C7F9;
+    border-radius: 5px;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    width: 206px;
+    height: 39px;
+    outline: none;
+    border: 0;
+}
+
+.button-popup a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.first-block,
+.second-block,
+.third-block {
+    width: 100%;
+}
+
+.first-block {
+    background: #B3F95A;
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: minmax(auto, 390px) minmax(auto, 590px) minmax(auto, 160px);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.item {
+    height: 198px;
+    background: #8AD191;
+}
+
+.item-fourth {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 53px;
+    color: #FFFFFF;
+}
+
+.second-block {
+    background: #88B5BF;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0 30px;
+    box-sizing: border-box;
+
+}
+
+.item-second {
+    background: #0D89B0;
+    height: 199px;
+}
+
+.third-block {
+    width: 100%;
+    height: 100px;
+    background: #7FAFF7;
+    margin-top: 100px;
+}
+
+
+.pop-up {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    opacity: 0;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.pop-up:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-close {
+    width: 43px;
+    height: 39px;
+    background: #7FAFF6;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-icon {
+    width: 13px;
+    height: 23px;
+}
