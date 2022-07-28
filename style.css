@@ -81,7 +81,7 @@
     background: #88B5BF;
     padding: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto;
     grid-gap: 0 30px;
     box-sizing: border-box;
 
@@ -111,7 +111,6 @@
     align-items: center;
     justify-content: center;
     background: #FFFFFF;
-    cursor: pointer;
     z-index: 9999;
 }
 
@@ -121,6 +120,7 @@
 }
 
 .popup-close {
+    cursor: pointer;
     width: 43px;
     height: 39px;
     background: #7FAFF6;
